@@ -15,7 +15,7 @@ const copy = async () => {
   };
 
   return cp(src, dest, options).catch(() => {
-    console.log("FS operation failed");
+    throw new Error("FS operation failed");
   });
 };
 

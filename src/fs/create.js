@@ -13,7 +13,7 @@ const create = async () => {
   };
 
   return writeFile(path, text, options).catch(() => {
-    console.log("FS operation failed");
+    throw new Error("FS operation failed");
   });
 };
 
