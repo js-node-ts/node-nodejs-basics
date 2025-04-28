@@ -1,6 +1,6 @@
 import { dirname, join } from "path";
 import { fileURLToPath } from "url";
-import { writeFile } from "node:fs/promises";
+import { writeFile } from "fs/promises";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
